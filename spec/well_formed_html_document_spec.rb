@@ -1,7 +1,11 @@
-RSpec.describe "Well-Formed HTML Document" do
-  it 'begins with a valid doctype' do
-    expect(parsed_html.children.first).to be_html5_dtd
-  end
+RSpec.describe 
+
+
+<!DOCTYPE html>
+<h1>
+</h1>
+
+</!DOCTYPE html>
 
   it 'has a top-level <html> tag to enclose the document' do
     expect(parsed_html.child.name).to match(/html/i)
